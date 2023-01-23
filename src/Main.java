@@ -18,7 +18,7 @@ public class Main {
     public static void task1() {
         System.out.println("task 1");
         int[] random = generateRandomArray();
-        // int[] arr — объявление массива
+        // int[] arr = random — объявление массива
         // generateRandomArray() — вызов метода «сгенерироватьМассив»
         int monthMoney = 0;
         for (int i = 0; i < random.length; i++) {
@@ -32,7 +32,7 @@ public class Main {
     public static void task2() {
         System.out.println("task 2");
         int[] random = generateRandomArray();
-        // int[] arr — объявление массива
+        // int[] arr = random — объявление массива
         // generateRandomArray() — вызов метода «сгенерироватьМассив»
         int minMoney = random[0];
         int maxMoney = random[0];
@@ -48,6 +48,19 @@ public class Main {
         }
         System.out.println("Минимальная сумма трат за день составила " + minMoney + " рублей. Максимальная сумма трат за день составила " + maxMoney + " рублей");
     }
+    public static void task3() {
+        System.out.println("task 3");
+        int[] random = generateRandomArray();
+        // int[] arr = random — объявление массива
+        // generateRandomArray() — вызов метода «сгенерироватьМассив»
+        int minMoney = random[0];
+        int maxMoney = random[0];
+        for (int i = 0; i < random.length; i++) {
+
+        }
+
+        }
 
 
-}
+
+    }
