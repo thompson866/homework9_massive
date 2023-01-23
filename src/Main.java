@@ -37,8 +37,7 @@ public class Main {
         int minMoney = random[0];
         int maxMoney = random[0];
         for (int i = 0; i < random.length; i++) {
-            if (random[i] < minMoney) ;
-            {
+            if (random[i] < minMoney) {
                 minMoney = random[i];
             }
 
