@@ -1,7 +1,11 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
+        task4();
 
     }
 
@@ -48,19 +52,30 @@ public class Main {
         }
         System.out.println("Минимальная сумма трат за день составила " + minMoney + " рублей. Максимальная сумма трат за день составила " + maxMoney + " рублей");
     }
+
     public static void task3() {
         System.out.println("task 3");
         int[] random = generateRandomArray();
+        System.out.println(Arrays.toString(random));
         // int[] arr = random — объявление массива
         // generateRandomArray() — вызов метода «сгенерироватьМассив»
-        int minMoney = random[0];
-        int maxMoney = random[0];
+        int monthMoney = 0;
         for (int i = 0; i < random.length; i++) {
+            monthMoney = monthMoney + random[i];
 
         }
-
-        }
-
-
+        System.out.printf("Сумма трат за месяц составила %.2f рублей%n", (double) monthMoney / random.length);
+        // Далее пишем код для задачи
 
     }
+
+    public static void task4() {
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
+        }
+
+    }
+
+
+}
